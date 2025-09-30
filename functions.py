@@ -17,7 +17,6 @@ import os
 from codes_q import *
 from torch_scatter import scatter_softmax, scatter_add, scatter_max
 
-#Some codes forked from https://github.com/arshpreetmaan/astra/tree/main
 class BayesianLinear(nn.Module):
     def __init__(self, in_features, out_features, prior_std=1.0):
         super().__init__()
